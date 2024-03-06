@@ -12,8 +12,13 @@ window.addEventListener("load", () => {
 });
 
 button.addEventListener("click", () => {
-  let size = prompt("Enter size: ");
-  fillGrid(size);
+  let size = prompt("Enter size:(1-64) ");
+  if (isNaN(parseInt(size))) {
+    alert("Invalid size (1-64 only)");
+    return;
+  } else {
+    fillGrid(size);
+  }
 });
 
 /*MAIN FUNCTION*/
@@ -22,6 +27,7 @@ function fillGrid(sideLength) {
     alert("64 is max");
     return;
   }
+
   resetGrid();
 
   for (let length = 0; length < sideLength; length++) {
