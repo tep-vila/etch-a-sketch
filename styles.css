@@ -11,12 +11,13 @@ body {
 .main-container {
   width: 500px;
   height: 500px;
-  background-color: gray;
+  background-color: white;
   margin: 10vh auto 0 auto;
   padding: 0;
 
   display: flex;
   flex-wrap: wrap;
+  outline: 1px solid black;
 }
 
 .pixels {
@@ -25,7 +26,13 @@ body {
   flex: 1 1 calc(100% / 16);
 }
 
-button {
-  width: 10vh;
-  height: 10vh;
+.pixels:hover {
+  background-color: gray;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  width: 25vh;
+  justify-content: space-around;
 }
