@@ -2,3 +2,20 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.main-container {
+  width: 500px;
+  height: 500px;
+  background-color: gray;
+  margin: 10vh auto 0 auto;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pixels {
+  background-color: inherit;
+  outline: 1px solid black;
+  flex: 1 0 calc(100% / 16);
+}
